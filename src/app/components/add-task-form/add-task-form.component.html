@@ -1,0 +1,13 @@
+<main class="input-task">
+  <div class="categories">
+    <div class="category"></div>
+    <div class="category"></div>
+    <div class="category"></div>
+  </div>
+  <input
+    type="text"
+    (keydown.enter)="submit()"
+    [(ngModel)]="taskName"
+    placeholder="Какой будет ваша следующая задача?"
+  />
+</main>

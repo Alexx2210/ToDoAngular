@@ -1,0 +1,14 @@
+<main class="main">
+  <app-menu></app-menu>
+  <div class="add-task">
+    <h2>Задача на сегодня</h2>
+    <h1>Встреча по дизайну</h1>
+    <app-add-task-form (sendTask)="test($event)"></app-add-task-form>
+    <br />
+    <div *ngFor="let task of taskList; let i = index" class="tasks">
+      <app-task [task]="task" [taskNumber]="i"></app-task>
+    </div>
+
+    <ng-template *ngIf="true"> </ng-template>
+  </div>
+</main>
